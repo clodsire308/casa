@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi siamo | Case De Lemn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<style>/* Reset di base */
+/* Reset di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Layout e Stile della Sezione */
+.chi-sono {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 60px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stile per i Titoli */
+h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 28px;
+  color: #27ae60;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Descrizione */
+.descrizione {
+  margin-bottom: 40px;
+}
+
+.descrizione p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/* Contatti */
+.contatti {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.contatti p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.contatti a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.contatti a:hover {
+  text-decoration: underline;
+}
+
+/* Sezione Social */
+.social {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.social ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social li {
+  margin: 0;
+}
+
+.social li a {
+  font-size: 32px;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social li a:hover {
+  color: #27ae60;
+  transform: scale(1.1);
+}
+
+/* Mappa */
+.mappa iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.mappa h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Sezione Completa: Margini */
+.contatti, .social, .mappa {
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .social ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mappa iframe {
+    height: 350px;
+    width: 250px;
+  }
+
+  .social li a {
+    font-size: 28px;
+  }
+
+  .descrizione p {
+    font-size: 16px;
+  }
+
+  .contatti p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 468px) {
+  .mappa iframe{
+    width: 250px; 
+}
+}
+    </style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="Case De Lemn Logo" loading="lazy">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+            <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Servizi</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="contact.html">Contatti</a></li>
+        </ul>
+    </nav>
+    <section class="chi-sono">
+        <div class="container">
+          <div class="descrizione">
+            <h2>Chi siamo</h2>
+            <h3>Casa de Lemn CAGL: Dove la natura incontra l'artigianato</h3>
+            <p>Casa de Lemn CAGL è un’impresa che si distingue per la creazione di abitazioni ecologiche e sostenibili in legno, utilizzando materiali naturali e tecniche artigianali di alta qualità. Fondata con l'obiettivo di offrire soluzioni abitative che rispettano l'ambiente e il benessere delle persone, Casa de Lemn CAGL è il punto di riferimento per chi cerca una casa che unisca bellezza, funzionalità e sostenibilità. Ogni progetto è realizzato con cura, attenzione al dettaglio e un forte legame con la tradizione dell'artigianato legnoso, ma con uno sguardo rivolto al futuro.</p>
+          </div>
+          <div class="contatti">
+            <h3>Contatti</h3>
+            <p><strong>Indirizzo:</strong> Via Roma, 56
+              07040 Tissi (SS)</p>
+            <p><strong>Telefono:</strong> +39 346 328 8798</p>
+            <p><strong>Email:</strong> <a href="mailto:casedelemncagl@gmail.com">casedelemncagl@gmail.com</a></p>
+          </div>
+          <div class="social">
+            <h3>Seguici sui Social</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/p/Case-De-Lemn-CAGL-100093400132737" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/casedelemn_cagl/#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="mappa">
+            <center>
+            <h3>Dove Siamo</h3>
+            <!-- Embedding della mappa di Google -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.839384320884!2d8.560325674916644!3d40.67750777139881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12dc6191b17fcefb%3A0x9440e51d45f800fa!2sCase%20De%20Lemn%20C.A.G.L!5e0!3m2!1sit!2sit!4v1734424690895!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </center>
+      </section>
+      
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Case De Lemn</h3>
+                <p>
+                    Specializzati nella progettazione e costruzione di case in legno ecologiche, combiniamo tradizione e innovazione per offrirti la casa dei tuoi sogni.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Link Utili</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="services.html">Servizi</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contatti</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+39 346 328 8798">  <a href="https://www.instagram.com/casedelemn_cagl/#"><i class="fab fa-instagram"></i></a> 346 328 8798</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:casedelemncagl@gmail.com">casedelemncagl@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Via Roma, 56
+07040 Tissi (SS)
+</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Seguici</h3>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/p/Case-De-Lemn-CAGL-100093400132737/"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com/casedelemn_cagl/#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Case De Lemn. Tutti i diritti riservati.</p>
+            <p>
+                Developed by <a href="https://www.linkedin.com/in/biagio-scaglia/" target="_blank">Biagio Scaglia</a>
+            </p>
+        </div>
+    </footer>
+            
+    
+    <script src="script.js"></script>
+</body>
+</html>

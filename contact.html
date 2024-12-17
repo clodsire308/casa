@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Case De Lemn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<style>/* Stile del Form di Contatto */
+/* Stile del Form di Contatto */ 
+.contatti-form {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Stile del Modulo */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Checkbox Privacy */
+.checkbox-group {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  accent-color: #004d00;
+}
+
+.checkbox-group a {
+  color: #27ae60;
+}
+
+.checkbox-group a:hover {
+  text-decoration: underline;
+}
+
+/* Pulsante di invio */
+.btn-submit {
+  background-color: #004d00;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input, .form-group textarea {
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  
+  .checkbox-group {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .checkbox-group input {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+    </style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Case De Lemn Logo" loading="lazy">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+            <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Servizi</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            
+        </ul>
+    </nav>
+
+    <section class="contatti-form" id="contact">
+        <div class="container">
+          <h2>Contattaci</h2>
+          <p>Hai domande o vuoi maggiori informazioni? Compila il modulo qui sotto e ti risponderemo il prima possibile.</p>
+          <form id="contactForm">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi il tuo messaggio" required></textarea>
+            </div>
+        
+            <!-- Checkbox Privacy -->
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="privacy" name="privacy" value="Accettato" required>
+                    Accetto la <a href="privacy.html" target="_blank">Privacy Policy</a>
+                </label>
+            </div>
+        
+            <!-- Checkbox Termini -->
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="termini" name="termini" value="Accettato" required>
+                    Accetto i <a href="termini.html" target="_blank">Termini e Condizioni</a>
+                </label>
+            </div>
+        
+            <button type="submit" class="btn-submit">Invia Messaggio</button>
+        </form>
+        
+        <div id="formResponse" style="margin-top: 20px; color: green; font-weight: bold;"></div>
+        
+        
+      </section>
+      
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Case De Lemn</h3>
+                <p>
+                    Specializzati nella progettazione e costruzione di case in legno ecologiche, combiniamo tradizione e innovazione per offrirti la casa dei tuoi sogni.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Link Utili</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="services.html">Servizi</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contatti</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+39 346 328 8798">+39 346 328 8798</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:casedelemncagl@gmail.com">casedelemncagl@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Via Roma, 56
+07040 Tissi (SS)
+</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Seguici</h3>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/p/Case-De-Lemn-CAGL-100093400132737/"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com/casedelemn_cagl/#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Case De Lemn. Tutti i diritti riservati.</p>
+            <p>
+                Developed by <a href="https://www.linkedin.com/in/biagio-scaglia/" target="_blank">Biagio Scaglia</a>
+            </p>
+        </div>
+    </footer>
+            
+    
+    <script src="script.js"></script>
+   <script>document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Impedisci il comportamento predefinito
+
+    // Controllo checkbox
+    const privacyChecked = document.getElementById("privacy").checked;
+    const terminiChecked = document.getElementById("termini").checked;
+
+    if (!privacyChecked || !terminiChecked) {
+        alert("Devi accettare la Privacy Policy e i Termini e Condizioni per procedere.");
+        return;
+    }
+
+    // Raccogli i dati del form
+    const formData = new FormData(this);
+    const scriptURL = "https://script.google.com/macros/s/AKfycbysinspuWZPPi4eRC9A-9eZqhBfHicVnS9jAHtezKM1fseGudzh5S4FR-DJ1ouW1CSO/exec"; // Inserisci qui l'URL dello script Google Apps
+
+    // Invia i dati tramite fetch
+    fetch(scriptURL, { method: "POST", body: formData })
+        .then(response => {
+            document.getElementById("formResponse").innerText = "Messaggio inviato con successo! Ti risponderemo al più presto.";
+            document.getElementById("contactForm").reset();
+        })
+        .catch(error => {
+            console.error("Errore nell'invio del form:", error);
+            document.getElementById("formResponse").innerText = "Si è verificato un errore, riprova più tardi.";
+        });
+});
+    
+</script>
+</body>
+</html>
